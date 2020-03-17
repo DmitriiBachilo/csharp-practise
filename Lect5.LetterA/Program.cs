@@ -6,10 +6,19 @@ namespace Lect5.LetterA
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter a message");
+            Console.Write("Enter a message: ");
             string str = Console.ReadLine();
-            int valueLength = str.Length;
-            Console.WriteLine($"Count of numbers =" + valueLength);
+            int count = 0;
+            foreach (char ch in str)
+            {
+                if (ch == 'a')
+                {
+                    count++;
+                }
+            }
+
+            Console.WriteLine("Количество букв 'а' в данном слове: " + count);
+            Console.ReadKey();
         }
     }
 }
