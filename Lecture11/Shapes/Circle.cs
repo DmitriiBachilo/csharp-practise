@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Shapes
+{
+    class Circle : Shape
+    {
+        public double Radius { get; set; }
+
+        public override double CalculateArea()
+        {
+            return Math.PI * Radius * Radius;
+        }
+    }
+   
+}
