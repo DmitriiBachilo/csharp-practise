@@ -16,5 +16,10 @@ namespace Lecture12
             LastId = _id;
         }
 
+        public UniqueItem(int id)
+        {
+            _id = id;
+            LastId = _id;
+        }
     }
 }
